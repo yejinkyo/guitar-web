@@ -1,0 +1,119 @@
+/* 기본 스타일 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+.guitar-wrapper {
+    position: relative;
+    width: 251px;
+    height: 763px;
+    transform-origin: center center;
+    transition: transform 0.5s ease, left 0.5s ease, top 0.5s ease;
+    /* 처음 위치는 화면 왼쪽에 오도록 설정 */
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.guitar-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: -40%;
+}
+
+.guitar-strings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: -40%;
+    transform: translateX(-18px) translateY(-20px) scaleY(0.73); /* 시작 크기를 줄여서 위치 조정 */
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+/* 애니메이션 효과 */
+.guitar-wrapper.animate {
+    left: 50%;  /* 화면 중앙으로 이동 */
+    top: 50%;
+    transform: translate(-50%, -100%) scale(3.7); /* 확대 효과 */
+}
+
+
+/* 첫 번째 줄에만 진동 애니메이션 적용 */
+#string1:hover {
+    animation: vibrate 0.2s ease-in-out infinite;
+}
+
+/* 두 번째 줄에만 진동 애니메이션 적용 */
+#string2:hover {
+    animation: vibrate 0.2s ease-in-out infinite;
+}
+
+/* 세 번째 줄에만 진동 애니메이션 적용 */
+#string3:hover {
+    animation: vibrate 0.2s ease-in-out infinite;
+}
+
+/* 네 번째 줄에만 진동 애니메이션 적용 */
+#string4:hover {
+    animation: vibrate 0.2s ease-in-out infinite;
+}
+
+/* 진동 애니메이션 */
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-4px);
+    }
+    50% {
+        transform: translateX(4px);
+    }
+    75% {
+        transform: translateX(-4px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake {
+  animation: vibrate 2s ease-in-out infinite;
+}
+
+
+
+/* expanded 클래스를 추가하면 확대된 상태로 표시 */
+.guitar-wrapper.expanded {
+    left: 50%;  /* 화면 중앙으로 이동 */
+    top: 50%;
+    transform: translate(-50%, -100%) scale(3.7); /* 확대 효과 */
+    opacity: 0.3;
+}
+
+.string-link {
+    display: block;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.guitar-wrapper {
+    z-index: 1;
+}
+
+.login-wrapper {
+    z-index: 2; /* 입력 필드 및 버튼이 더 위에 오도록 설정 */
+}
