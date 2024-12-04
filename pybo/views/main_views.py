@@ -11,9 +11,9 @@ def mypage():
     string = request.args.get('string', 'default')
     return render_template('mypagE.html', string=string)
 
-@main_bp.route('/Downloads')
+@main_bp.route('/introDuction')
 def downloads():
-    return render_template('Downloads.html')
+    return render_template('introDuction.html')
 
 @main_bp.route('/All-products')
 def all_products():
