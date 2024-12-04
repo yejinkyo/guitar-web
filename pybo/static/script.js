@@ -6,17 +6,10 @@ setTimeout(() => {
 // 오디오 파일 로드
 const string1Sound = new Audio('/static/sounds/kickback.mp3'); // 오디오 파일 경로
 
-// string1에 마우스를 올리면 소리 재생
-document.getElementById('string1').addEventListener('mouseover', function() {
-    string1Sound.currentTime = 0; // 소리 초기화
-    string1Sound.play(); // 소리 재생
-});
+document.getElementById('string1').addEventListener('click', function() {
+            string1Sound.play();
+        });
 
-// string1에서 마우스를 떼면 소리 멈추기
-document.getElementById('string1').addEventListener('mouseout', function() {
-    string1Sound.pause(); // 소리 멈춤
-    string1Sound.currentTime = 0; // 소리 초기화
-});
 
 document.addEventListener('click', function (event) {
     const statusInput = document.getElementById('status-input');
