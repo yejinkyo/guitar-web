@@ -8,6 +8,7 @@ class User(db.Model):
     password = db.Column(db.String(128), nullable=False)
     email = db.Column(db.String(25), unique=True, nullable=False)
     create_date = db.Column(db.DateTime, default=datetime.utcnow)
+    status = db.Column(db.String(50), default="Add a description")
 
 class Order(db.Model):
     o_id = db.Column(db.Integer, primary_key=True)

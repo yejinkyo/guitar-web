@@ -117,3 +117,22 @@ body {
 .login-wrapper {
     z-index: 2; /* 입력 필드 및 버튼이 더 위에 오도록 설정 */
 }
+
+/* 기본적으로 테두리 숨기기 */
+.textarea {
+    border: none; /* 기본 테두리 숨김 */
+    outline: none; /* 기본 외곽선 제거 */
+    transition: border 0.3s ease; /* 부드러운 효과 */
+        }
+
+/* 클릭(포커스) 상태에서만 테두리 보이게 */
+.textarea:focus {
+    border: 2px solid #007bff; /* 클릭 시 파란색 테두리 */
+        }
+
+.profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
