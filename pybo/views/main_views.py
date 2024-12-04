@@ -10,6 +10,8 @@ def index():
 @main_bp.route('/mypagE')
 def mypage():
     user = User.query.first()
+    if not user:
+        return "User not found", 404  # 사용자 데이터가 없을 때
 
     return render_template('mypagE.html')
 
