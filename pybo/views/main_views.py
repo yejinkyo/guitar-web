@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from pybo.models import User
+from pybo.models import User, Order
 
 main_bp = Blueprint('main', __name__)
 
@@ -12,8 +12,10 @@ def mypage():
     user = User.query.first()
     if not user:
         return "User not found", 404  # 사용자 데이터가 없을 때
+    orders = Order.query.filter_by(user_id=user.id).all()
 
-    return render_template('mypagE.html')
+
+    return render_template('mypagE.html', user=user, orders=orders)
 
 @main_bp.route('/introDuction')
 def downloads():

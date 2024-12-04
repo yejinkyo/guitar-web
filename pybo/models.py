@@ -13,4 +13,4 @@ class Order(db.Model):
     o_id = db.Column(db.Integer, primary_key=True)
     id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     order_date = db.Column(db.DateTime, default=datetime.utcnow)
-    total_price = db.Column(db.DateTime, default=datetime.utcnow)
+    total_price = db.Column(db.Integer, default=datetime.utcnow)
