@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 페이지 - 기타 샵</title>
+    <title>mypagE</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <style>
         .profile-img {
@@ -23,7 +23,7 @@
                     <div class="card-body">
                         <img src="/static/images/guitarmen.png" class="profile-img mb-3" alt="프로필 이미지">
                         <h4>{{ user.username }}</h4>
-                        <p class="text-muted">기타 애호가</p>
+                        <p class="text-muted">wonder</p>
                         <button class="btn btn-primary mt-2">프로필 수정</button>
                     </div>
                 </div>
@@ -36,10 +36,12 @@
                 {% for order in orders %}
                 <div class="card mb-3">
                     <div class="card-body d-flex align-items-center">
+                        <div class="badge bg-light text-dark p-2">
+                            <p class="text-muted mb-1">{{ order.order_date|datetime }}</p>
+                        </div>
                         <img src="{{ order.product_image }}" class="me-3" width="80" alt="주문 상품">
                         <div>
                             <h5 class="card-title">{{ order.product_name }}</h5>
-                            <p class="text-muted mb-1">주문 날짜: {{ order.order_date }}</p>
                             <div class="d-flex align-items-center">
                                 <span class="fw-bold me-3">₩{{ "{:,}".format(order.total_price) }}</span>
                                 <span class="badge bg-success">{{ order.status }}</span>
