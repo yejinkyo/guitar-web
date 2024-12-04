@@ -136,3 +136,12 @@ body {
             border-radius: 50%;
             object-fit: cover;
         }
+
+.message-box {
+            font-family: 'Protest Revolution', sans-serif;
+            position: absolute;
+            top: 250px;
+            right: 370px;
+            font-size: 20px;
+            color: black;
+        }

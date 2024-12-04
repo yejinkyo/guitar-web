@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bass Guitar Web App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="guitar-wrapper" id="guitarWrapper">
@@ -34,7 +36,7 @@
         </svg>
     </div>
     <div class="message-box m-lg-0">
-        <img src="{{ url_for('static', filename='images/guitarmen.png') }}" alt="Image" class="message-image">
+        <div class="top-right">try hovering over the strings..</div>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- JS 파일 연결 -->
 </body>
