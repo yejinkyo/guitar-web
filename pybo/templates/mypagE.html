@@ -6,11 +6,12 @@
     <title>mypagE</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mypage_style.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container py-4">
-        <div class="mb-5 d-flex align-items-center">
+        <div class="mb-4 d-flex align-items-center">
             <a href="{{ url_for('main.index') }}">
                 <i class="fas fa-home fa-2x me-4"></i> <!-- 집 아이콘 -->
             </a>
@@ -37,26 +38,28 @@
                                     outline: none;
                                     font-size: 16px;">
                         </form>
-
-                        <button class="btn btn-primary mt-2">프로필 수정</button>
+                        <div><button class="logout-button">edit profile</button></div>
+                        <link rel="preconnect" href="https://fonts.gstatic.com">
+                        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+                        <button class="logout-button">log out</button>
                     </div>
                 </div>
             </div>
 
             <!-- 주문 내역 섹션 -->
             <div class="col-md-8">
-                <h3 class="mb-3"><b>주문 내역</b></h3>
+                <h3 class="mb-3"><b>Purchase History</b></h3>
                 <hr />
                 {% for order in orders %}
                 <h5><b>{{ order.order_date|datetime }}</b></h5>
                 <div class="card mb-3">
                     <div class="card-body d-flex align-items-center">
                         <div class="card-body">
-                            <img src="{{ order.product_image }}" class="me-3" width="80" alt="주문 상품">
+                            <img src="{{ order.product_image }}" class="me-3" width="80" alt="Product">
                         </div>
                         <div>
                             <h5 class="card-title">{{ order.product_name }}</h5>
-                            <button class="btn btn-link"><u>주문상세</u></button>
+                            <button class="btn btn-link"><u>Detail</u></button>
                             <div class="d-flex align-items-center">
                                 <span class="fw-bold me-3">₩{{ "{:,}".format(order.total_price) }}</span>
                                 <span class="badge bg-success">{{ order.status }}</span>
