@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 페이지 - 기타 샵</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <style>
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row">
+            <!-- 프로필 섹션 -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="/static/images/guitarmen.png" class="profile-img mb-3" alt="프로필 이미지">
+                        <h4>{{ user.username }}</h4>
+                        <p class="text-muted">기타 애호가</p>
+                        <button class="btn btn-primary mt-2">프로필 수정</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 주문 내역 섹션 -->
+            <div class="col-md-8">
+                <h3 class="mb-3">최근 주문</h3>
+
+                {% for order in orders %}
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="{{ order.product_image }}" class="me-3" width="80" alt="주문 상품">
+                        <div>
+                            <h5 class="card-title">{{ order.product_name }}</h5>
+                            <p class="text-muted mb-1">주문 날짜: {{ order.order_date }}</p>
+                            <div class="d-flex align-items-center">
+                                <span class="fw-bold me-3">₩{{ "{:,}".format(order.total_price) }}</span>
+                                <span class="badge bg-success">{{ order.status }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, request
+from pybo.models import User
 
 main_bp = Blueprint('main', __name__)
 
@@ -8,8 +9,9 @@ def index():
 
 @main_bp.route('/mypagE')
 def mypage():
-    string = request.args.get('string', 'default')
-    return render_template('mypagE.html', string=string)
+    user = User.query.first()
+
+    return render_template('mypagE.html')
 
 @main_bp.route('/introDuction')
 def downloads():
