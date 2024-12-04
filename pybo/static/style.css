@@ -138,10 +138,11 @@ body {
         }
 
 .message-box {
+            display: none;
             font-family: 'Protest Revolution', sans-serif;
             position: absolute;
-            top: 250px;
-            right: 370px;
+            top: 230px;
+            right: 350px;
             font-size: 20px;
             color: black;
         }

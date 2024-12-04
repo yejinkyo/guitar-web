@@ -15,13 +15,13 @@ def mypage():
     orders = Order.query.filter_by(id=user.id).all()
     return render_template('mypagE.html', user=user, orders=orders)
 
-@main_bp.route('/introDuction')
-def downloads():
-    return render_template('introDuction.html')
+@main_bp.route('/About-us')
+def about_us():
+    return render_template('About_us.html')
 
-@main_bp.route('/All-products')
+@main_bp.route('/all-proDucts')
 def all_products():
-    return render_template('All_products.html')
+    return render_template('all_proDucts.html')
 
 @main_bp.route('/Guitar-memes')
 def guitar_memes():
