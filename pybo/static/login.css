@@ -46,3 +46,8 @@ body {
 .login-title {
     color: white;
 }
+
+.btn-primary {
+    background-color: #585858 !important;
+    border-color: #585858 !important;
+}
