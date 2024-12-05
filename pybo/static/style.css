@@ -1,6 +1,6 @@
 /* 기본 스타일 */
 body {
-    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D");
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/1115817473/display_1500/stock-photo-amazing-london-cityskyline-with-television-glitch-and-distortion-mapped-over-the-buildings-1115817473.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -8,7 +8,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f3f3f3;
     overflow: hidden;
 }
 
