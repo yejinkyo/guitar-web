@@ -14,6 +14,10 @@
     .btn:hover {
             background-color: #adb5bd !important;
         }
+    .subject {
+        text-decoration: none; /* 링크의 밑줄 제거 */
+        color: black;
+    }
 
   </style>
 </head>
@@ -47,7 +51,7 @@
         <tr>
             <td>{{ loop.index }}</td>
             <td>
-                <a href="{{ url_for('post.detail', post_id=post.p_id) }}">{{ post.subject }}</a>
+                <a class="subject" href="{{ url_for('post.detail', post_id=post.p_id) }}">{{ post.subject }}</a>
             </td>
             <td>{{ post.create_date }}</td>
         </tr>
@@ -62,7 +66,7 @@
 
     <a href="{{ url_for('post.create') }}" class="btn btn-primary text-center"
        style="width: 160px; height: 50px; align-items: center; display: flex; justify-content: center;
-                ">+ Create</a>
+                "><b>+ Create</b></a>
     </div>
 </div>
 

@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     margin: 0;
     overflow: hidden;
 }
@@ -96,16 +96,6 @@ body {
   animation: vibrate 2s ease-in-out infinite;
 }
 
-
-
-/* expanded 클래스를 추가하면 확대된 상태로 표시 */
-.guitar-wrapper.expanded {
-    left: 50%;  /* 화면 중앙으로 이동 */
-    top: 50%;
-    transform: translate(-50%, -100%) scale(3.7); /* 확대 효과 */
-    opacity: 0.3;
-}
-
 .string-link {
     display: block;
     pointer-events: all;
@@ -114,31 +104,14 @@ body {
 
 
 
-/* 기본적으로 테두리 숨기기 */
-.textarea {
-    border: none; /* 기본 테두리 숨김 */
-    outline: none; /* 기본 외곽선 제거 */
-    transition: border 0.3s ease; /* 부드러운 효과 */
-        }
 
-/* 클릭(포커스) 상태에서만 테두리 보이게 */
-.textarea:focus {
-    border: 2px solid #007bff; /* 클릭 시 파란색 테두리 */
-        }
-
-.profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
 
 .message-box {
             display: none;
             font-family: 'Protest Revolution', sans-serif;
             position: absolute;
-            top: 230px;
-            right: 350px;
+            top: 50px;
+            right: 200px;
             font-size: 20px;
             color: black;
         }

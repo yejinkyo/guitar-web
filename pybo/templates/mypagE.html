@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mypagE</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='mypage_style.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container py-4 mt-sm-1">
+    <div class="container">
         <div class="mb-5 d-flex align-items-center">
             <a href="{{ url_for('main.index') }}">
                 <p class="glitch">
@@ -24,7 +23,7 @@
         <div class="row">
             <!-- 프로필 섹션 -->
             <div class="col-md-4 mb-4 mt-3">
-                <div class="card text-center" style="background-color: #6c757d">
+                <div class="card text-center" style="background-color:black">
                     <div class="card-body">
                         <img src="/static/images/guitarmen.png" class="profile-img mb-3" alt="프로필 이미지">
                         <h4><b>{{ user.username }}</b></h4>
@@ -38,9 +37,14 @@
                                     width: 100%;
                                     padding: 10px;
                                     box-sizing: border-box;
-                                    border: none;
+
+                                    border-color: #e7f1ff;
+                                    background-color: black;
                                     outline: none;
-                                    font-size: 16px;">
+                                    color: #e7f1ff;
+                                    font-size: 16px;
+                                    margin-bottom: 20px;
+                                    margin-top: 20px;">
                         </form>
                         <div><button class="logout-button">edit profile</button></div>
                         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,7 +56,7 @@
 
             <!-- 주문 내역 섹션 -->
             <div class="col-md-8">
-                <h3 class="mb-3"><b>Purchase History</b></h3>
+                <h3 class="pur mb-3"><b>Purchase History</b></h3>
                 <hr />
                 {% for order in orders %}
                 <h5><b>{{ order.order_date|datetime }}</b></h5>
@@ -63,7 +67,7 @@
                         </div>
                         <div>
                             <h5 class="card-title">{{ order.product_name }}</h5>
-                            <button class="btn btn-link"><u>Detail</u></button>
+                            <button class="detail btn btn-link"><u>Detail</u></button>
                             <div class="d-flex align-items-center">
                                 <span class="fw-bold me-3">₩{{ "{:,}".format(order.total_price) }}</span>
                                 <span class="badge bg-success">{{ order.status }}</span>

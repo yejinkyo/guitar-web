@@ -1,14 +1,27 @@
+body {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
 a {
     text-decoration: none; /* 링크의 밑줄 제거 */
 }
 
 .glitch {
+    color: white;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
-  text-shadow: 0.05em 0 0 #fc00ff, -0.03em -0.04em 0 #ff0000,
-    0.025em 0.04em 0 #00ff00;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fc00ff;
     transition: text-shadow 0.3s ease;
 }
 
@@ -71,16 +84,16 @@ a {
 /* 로그아웃 버튼 */
 .logout-button, .logout-button::after {
     position: relative;
-    width: 200px;
-    height: 50px;
+    width: 180px;
+    height: 40px;
     font-size: 18px;
     font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(45deg, transparent 5%, #fc00ff 5%);
+    background: linear-gradient(45deg, transparent 5%, #ffffff 5%);
     border: 0;
-    color: #fff;
+    color: black;
     letter-spacing: 2px;
     line-height: 50px;
-    box-shadow: 3px 3px 0 #00fffc;
+    box-shadow: 3px 3px 0 #cff4fc;
     outline: transparent;
     cursor: pointer;
     margin-top: 10px;
@@ -99,8 +112,8 @@ a {
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #00fffc 3%, #00fffc 5%, #00fffc 5%);
-    text-shadow: -2px -2px 0 #00fffc, 2px 2px 0 #00fffc;
+    background: linear-gradient(45deg, transparent 3%, #cff4fc 3%, #cff4fc 5%, #cff4fc 5%);
+    text-shadow: -2px -2px 0 #cff4fc, 2px 2px 0 #cff4fc;
     clip-path: var(--slice-0);
 }
 
@@ -155,4 +168,45 @@ a {
     }
 }
 
+/* 기본적으로 테두리 숨기기 */
+.textarea {
+    border: none; /* 기본 테두리 숨김 */
+    outline: none; /* 기본 외곽선 제거 */
+    transition: border 0.3s ease; /* 부드러운 효과 */
+        }
 
+/* 클릭(포커스) 상태에서만 테두리 보이게 */
+.textarea:focus {
+    border: 2px solid #cff4fc; /* 클릭 시 파란색 테두리 */
+        }
+
+.profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+.container {
+            top: 0;
+}
+
+.blur {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.pur {
+    color: white;
+}
+
+.detail {
+    color: black;
+}
+
+h4 {
+    color: white;
+}
+
+h5 {
+    color: #adb5bd;
+}
