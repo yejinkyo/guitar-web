@@ -1,15 +1,86 @@
+a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+}
+
+.glitch {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+    transition: text-shadow 0.3s ease;
+}
+
+.glitch:hover {
+  animation: glitch 375ms infinite;  /* 호버 시 애니메이션 시작 */
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+    transition: text-shadow 0.3s ease;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  transform: translate(-0.04em, -0.03em);
+  opacity: 0.75;
+}
+
+.glitch span:last-child {
+  transition: text-shadow 0.3s ease;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  transform: translate(0.04em, 0.03em);
+  opacity: 0.75;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+      -0.04em -0.025em 0 #fffc00;
+  }
+}
+
+
+/* 로그아웃 버튼 */
 .logout-button, .logout-button::after {
     position: relative;
     width: 200px;
     height: 50px;
     font-size: 18px;
     font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(45deg, transparent 5%, #0047ab 5%);
+    background: linear-gradient(45deg, transparent 5%, #9370db 5%);
     border: 0;
     color: #fff;
     letter-spacing: 2px;
     line-height: 50px;
-    box-shadow: 3px 3px 0 #00e6f6;
+    box-shadow: 3px 3px 0 #00fffc;
     outline: transparent;
     cursor: pointer;
     margin-top: 10px;
@@ -28,8 +99,8 @@
     top: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #d0ee17 3%, #d0ee17 5%, #d0ee17 5%);
-    text-shadow: -2px -2px 0 #f8f005, 2px 2px 0 #00e6f6;
+    background: linear-gradient(45deg, transparent 3%, #00fffc 3%, #00fffc 5%, #00fffc 5%);
+    text-shadow: -2px -2px 0 #00fffc, 2px 2px 0 #00fffc;
     clip-path: var(--slice-0);
 }
 
