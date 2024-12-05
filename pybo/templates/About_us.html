@@ -9,8 +9,8 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
+            background-color: black;
+            padding-bottom: 10%;
         }
 
         /* About Us 섹션 스타일 */
@@ -31,7 +31,9 @@
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 70px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fc00ff;
+    transition: text-shadow 0.3s ease;
         }
 
         /* 소개 텍스트 스타일 */
@@ -42,6 +44,9 @@
             margin-bottom: 70px;
             opacity: 0.9;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
         }
 
         /* 팀원 사진 및 정보 섹션 */
@@ -49,6 +54,8 @@
             display: flex;
             justify-content: center;
             gap: 40px;
+            display: flex;
+            height: 100vh;
         }
 
         .team-member {
@@ -70,19 +77,21 @@
 
         /* 버튼 스타일 */
         .cta-button {
-            background-color: #000080;
-            color: white;
-            padding: 15px 30px;
+            background-color: #b6effb;
+            color: black;
+            padding: 15px 15px;
             font-size: 1.1rem;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
             margin-top: 50px;
+            text-align: center;
+
         }
 
         .cta-button:hover {
-            background-color: #4caf50;
+            background-color: #cbccce;
         }
     </style>
 </head>
