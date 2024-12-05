@@ -1,13 +1,14 @@
-# 🐬Guitar Website
+![header](https://capsule-render.vercel.app/api?type=venom&color=100:a82da8&height=300&width=2000&section=header&text=Guitar%20Websites&fontSize=50&fontColor=ffffff&animation=twinkling&fontAlign=60&stroke=04B486&strokeWidth=1)
 
-This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.<br>
+<p align="center">This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.<br></p>
+
 
 ## Features
 
 <img src="main.png" alt="Guitar Image" width="250" height="150"> <img src="aboutus.png" alt="Guitar Image" width="280" height="150"> 
 
 ### 🖥️ **Technology Stack**
-This project is built using the following technologies:<br>
+#### This project is built using the following technologies:<br>
 
 ![js](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 ![js](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
@@ -22,6 +23,8 @@ This project is built using the following technologies:<br>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yejinkyo)](https://github.com/anuraghazra/github-readme-stats)
 ![snake gif](https://github.com/yejinkyo/yejinkyo/blob/output/github-contribution-grid-snake.svg)
+
+
 
 ### 🎸 **Interactive Design**
 - Hover over guitar strings to see them vibrate and hear their corresponding tones.
