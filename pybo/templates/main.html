@@ -25,23 +25,16 @@
             <a href="{{ url_for('main.mypage') }}">
                 <line id="string1" x1="112.938" y1="92.6929" x2="95.4902" y2="709.446" stroke="#420EEC" stroke-width="5"/>
             </a>
-            <a href="{{ url_for('main.about_us') }}">
-                <line id="string2" x1="122.935" y1="92.9756" x2="105.486" y2="709.729" stroke="#420EEC" stroke-width="5"/>
-            </a>
-            <a href="{{ url_for('main.all_products') }}">
-                <line id="string3" x1="132.93" y1="93.2584" x2="115.482" y2="710.012" stroke="#420EEC" stroke-width="5"/>
-            </a>
-            <a href="{{ url_for('main.guitar_memes') }}">
-                <line id="string4" x1="142.926" y1="93.5412" x2="125.478" y2="710.294" stroke="#420EEC" stroke-width="5"/>
-            </a>
             {% else %}
             <a href="{{ url_for('auth.login') }}">
                 <line id="string1" x1="112.938" y1="92.6929" x2="95.4902" y2="709.446" stroke="#420EEC" stroke-width="5"/>
-                <line id="string2" x1="122.935" y1="92.9756" x2="105.486" y2="709.729" stroke="#420EEC" stroke-width="5"/>
-                <line id="string3" x1="132.93" y1="93.2584" x2="115.482" y2="710.012" stroke="#420EEC" stroke-width="5"/>
-                <line id="string4" x1="142.926" y1="93.5412" x2="125.478" y2="710.294" stroke="#420EEC" stroke-width="5"/>
             </a>
             {% endif %}
+            <a href="{{ url_for('main.about_us') }}">
+                <line id="string2" x1="122.935" y1="92.9756" x2="105.486" y2="709.729" stroke="#420EEC" stroke-width="5"/>
+            </a>
+            <line id="string3" x1="132.93" y1="93.2584" x2="115.482" y2="710.012" stroke="#420EEC" stroke-width="5"/>
+            <line id="string4" x1="142.926" y1="93.5412" x2="125.478" y2="710.294" stroke="#420EEC" stroke-width="5"/>
 
         </svg>
     </div>

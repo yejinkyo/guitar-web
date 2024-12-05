@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* 전체 페이지 스타일 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* About Us 섹션 스타일 */
+        .about-us-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            padding: 10px 10px 10px;
+        }
+
+        /* "About Us" 텍스트 스타일 */
+        .about-us-title {
+
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 70px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 소개 텍스트 스타일 */
+        .about-us-description {
+            font-size: 1rem;
+            max-width: 800px;
+            line-height: 1.6;
+            margin-bottom: 70px;
+            opacity: 0.9;
+            text-align: center;
+        }
+
+        /* 팀원 사진 및 정보 섹션 */
+        .team-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 150px;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 60%;
+            border-radius: 120%;
+        }
+
+        .team-member-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* 버튼 스타일 */
+        .cta-button {
+            background-color: #3e8e41;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Us 섹션 -->
+    <section class="about-us-section">
+        <h1 class="about-us-title">About Us</h1>
+        <hr />
+        <p class="about-us-description">
+            We believe in enriching peoples' lives through music, and we're proud to play our small part in that massive endeavour.
+            We envision all generations of players to experience the joy of music through our instruments, and that's all we do.
+            We give musicians the confidence that we are hands-on from production to performance.
+            Our instruments are made for you to delight in playing with professional sound quality.<br>
+            Play it easy and enjoy long jamming hours that will make you want more.
+        </p>
+
+        <!-- 팀원 소개 섹션 -->
+        <div class="team-section">
+            <div class="team-member">
+                <img src="static/images/coolcat.jpg" alt="팀원1">
+                <p class="team-member-name">고여름</p>
+                <p>cool cat</p>
+            </div>
+            <div class="team-member">
+                <img src="static/images/라파우.png" alt="팀원2">
+                <p class="team-member-name">라파우</p>
+                <p>cool kid</p>
+            </div>
+            <div class="team-member">
+                <img src="static/images/마슈.png" alt="팀원3">
+                <p class="team-member-name">마슈 반데드</p>
+                <p>human</p>
+            </div>
+        </div>
+
+        <!-- CTA 버튼 -->
+        <a href="/contact" class="cta-button">문의하기</a>
+    </section>
+
+</body>
+</html>
