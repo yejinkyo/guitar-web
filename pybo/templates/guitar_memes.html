@@ -4,59 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    <!-- pybo CSS -->
-    <style>
-/* 네비게이션 바 글씨 크기 키우기 */
-.nav-item {
-    font-size: 30px;  /* 글씨 크기 키우기 (원하는 크기로 수정 가능) */
-    color: white;
-
-/* 네비게이션 바 상단 고정 */
-ul.nav {
-    position: fixed;  /* 화면에 고정 */
-    top: 0;  /* 화면 맨 위에 위치 */
-    width: 100%;  /* 가로 길이를 화면의 100%로 설정 */
-    z-index: 9999;  /* 다른 콘텐츠보다 위에 나오도록 설정 */
-    justify-content: center; /* 텍스트 가운데 정렬 */
-    height: 100px !important;
-}
-
-.nav-link {
-  background-color: gray !important;  /* 기본 링크 색상은 회색 */
-}
-
-.nav-link.active {
-  background-color: black !important; /* 활성화된 링크는 검은색 */
-}
-
-.nav-link:hover {
-  background-color: #555 !important; /* 호버시 색을 조금 더 어두운 회색으로 설정 */
-}}
-
-    </style>
 </head>
 <body>
-<!-- 네비게이션바 -->
-<div class="mb-2">
-        <nav class="nav justify-content-center nav-pills nav-justified fixed-top">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ url_for('main.guitar_memes') }}" style="color: white;"><b>Meme Dictionary</b></a>
-          </li>
-          <li class="nav-item ">
-              <a class="nav-link" href="#" style="color: white;"><b>Community</b></a>
-          </li>
-        </nav>
-</div>
+
 <!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% extends 'base.html' %}
+{% block content %}
 <div class="shell text-center mt-7" style="margin-top: 100px; margin-bottom: 100%; padding-top: 30px; padding-bottom: 30px; padding-left: 190px; padding-right: 190px; background-color: #6c757d">
     <h1><b>Memes dictionary</b></h1>
       <p>What is a meme, and what do the most popular memes actually mean? We heard you ask, so we created the ultimate meme dictionary to make sense of it all!</p>
 <p>The word “meme” is both a noun and a verb, and it’s taken the Internet by storm in recent years. Open any social media profile, and you’re bound to see one. But where do memes come from? Is there a way to tell who was the very first person to put words on a photo of Chef Gordon Ramsey or turn some lines into a heart rate that spread all over Twitter? Take a look through our meme meanings to find out just where they came from and how long they’ve been around.</p>
-
-
 </div><!-- /.share -->
+{% endblock %}
 <!-- 기본 템플릿 안에 삽입될 내용 End -->
 </body>
 </html>

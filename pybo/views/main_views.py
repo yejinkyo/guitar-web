@@ -25,4 +25,8 @@ def all_products():
 
 @main_bp.route('/Guitar-memes')
 def guitar_memes():
-    return render_template('Guitar_memes.html')
+    return render_template('guitar_memes.html')
+
+@main_bp.route('/community')
+def community():
+    return render_template('community.html')
