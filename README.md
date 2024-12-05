@@ -1,9 +1,11 @@
 
 # 🐬Guitar Website
 
-This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.
+This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.<br>
 
 ## Features
+
+<img src="main.png" alt="Guitar Image" width="250" height="150">
 
 ### 🖥️ **Technology Stack**
 This project is built using the following technologies:<br>
