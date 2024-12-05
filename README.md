@@ -1,7 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=venom&color=100:a82da8&height=300&section=header&text=Guitar%20Websites&fontSize=50&fontColor=ffffff&animation=twinkling&stroke=F5A9F2&strokeWidth=1)
 
-<p align="center">This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.<br></p>
-
+<p style="color:#ffffff" align="center">This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.<br></p>
 
 ## Features
 
