@@ -5,17 +5,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Guitar-memes</title>
+      <style>
+    /* 수평 캐러셀을 위한 CSS */
+    .carousel-inner {
+      display: flex;
+      flex-direction: row; /* 수평 배열 */
+      overflow-x: auto; /* 수평 스크롤 가능 */
+    }
+    .carousel-item {
+      flex: 0 0 auto; /* 각 아이템이 수평으로 배치되고 스크롤이 되도록 설정 */
+    }
+  </style>
 </head>
 <body>
 
 <!-- 기본 템플릿 안에 삽입될 내용 Start -->
 {% extends 'base.html' %}
 {% block content %}
-<div class="shell text-center mt-7" style="margin-top: 100px; margin-bottom: 100%; padding-top: 30px; padding-bottom: 30px; padding-left: 190px; padding-right: 190px; background-color: #6c757d">
+<div class="shell text-center mt-7" style="margin-top: 100px; padding-top: 30px; padding-bottom: 30px; padding-left: 190px; padding-right: 190px; background-color: #6c757d">
     <h1><b>Memes dictionary</b></h1>
       <p>What is a meme, and what do the most popular memes actually mean? We heard you ask, so we created the ultimate meme dictionary to make sense of it all!</p>
 <p>The word “meme” is both a noun and a verb, and it’s taken the Internet by storm in recent years. Open any social media profile, and you’re bound to see one. But where do memes come from? Is there a way to tell who was the very first person to put words on a photo of Chef Gordon Ramsey or turn some lines into a heart rate that spread all over Twitter? Take a look through our meme meanings to find out just where they came from and how long they’ve been around.</p>
 </div><!-- /.share -->
+
+<!-- 글 목록 -->
+<div class="container my-3">
+    <div class="d-flex justify-content-between align-items-center">
+        <table class="table" style="margin-right: 500px">
+        <thead>
+        <tr class="table-dark">
+            <th>id</th>
+            <th>subject</th>
+            <th>create date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if post_list %}
+        {% for post in post_list %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>
+                <a href="{{ url_for('post.detail', post_id=post.p_id) }}">{{ post.subject }}</a>
+            </td>
+            <td>{{ post.create_date }}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="3">글이 없습니다.</td>
+        </tr>
+        {% endif %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('post.create') }}" class="btn btn-primary text-center"
+       style="width: 200px; height: 50px; align-items: center; display: flex; justify-content: center;">+ Create</a>
+    </div>
+</div>
+
 {% endblock %}
 <!-- 기본 템플릿 안에 삽입될 내용 End -->
 </body>

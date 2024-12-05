@@ -17,10 +17,11 @@ def create_app():
     migrate.init_app(app, db)
 
     # 블루프린트
-    from .views import main_views, auth_views
+    from .views import main_views, auth_views, post_views
     from . import models
     app.register_blueprint(main_views.main_bp)
     app.register_blueprint(auth_views.bp)
+    app.register_blueprint(post_views.bp)
 
 
     from .filter import format_datetime

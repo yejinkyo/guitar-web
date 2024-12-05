@@ -1,5 +1,5 @@
-from flask import Blueprint, render_template, request
-from pybo.models import User, Order
+from flask import Blueprint, render_template, url_for
+from pybo.models import User, Order, Post
 
 main_bp = Blueprint('main', __name__)
 
@@ -25,7 +25,8 @@ def all_products():
 
 @main_bp.route('/Guitar-memes')
 def guitar_memes():
-    return render_template('guitar_memes.html')
+    post_list = Post.query.order_by(Post.create_date.desc())
+    return render_template('guitar_memes.html', post_list=post_list)
 
 @main_bp.route('/community')
 def community():
