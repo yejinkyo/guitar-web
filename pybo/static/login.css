@@ -1,0 +1,48 @@
+/* 기본 스타일 */
+body {
+    background-color: black !important;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.guitar-wrapper {
+    position: relative;
+    width: 251px;
+    height: 763px;
+    transform-origin: center center;
+    transition: transform 0.5s ease, left 0.5s ease, top 0.5s ease;
+    /* 처음 위치는 화면 왼쪽에 오도록 설정 */
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* expanded 클래스를 추가하면 확대된 상태로 표시 */
+.guitar-wrapper.expanded {
+    left: 50%;  /* 화면 중앙으로 이동 */
+    top: 50%;
+    transform: translate(-50%, -100%) scale(3.7); /* 확대 효과 */
+    opacity: 0.3;
+}
+.guitar-wrapper {
+    z-index: 1;
+}
+
+.login-wrapper {
+    z-index: 2; /* 입력 필드 및 버튼이 더 위에 오도록 설정 */
+}
+
+.blur {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.login-title {
+    color: white;
+}

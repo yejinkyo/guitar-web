@@ -1,6 +1,6 @@
 /* 기본 스타일 */
 body {
-    background-image: url("https://www.shutterstock.com/shutterstock/photos/1115817473/display_1500/stock-photo-amazing-london-cityskyline-with-television-glitch-and-distortion-mapped-over-the-buildings-1115817473.jpg");
+    background-image: url("images/우주인.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -112,13 +112,7 @@ body {
     cursor: pointer;
 }
 
-.guitar-wrapper {
-    z-index: 1;
-}
 
-.login-wrapper {
-    z-index: 2; /* 입력 필드 및 버튼이 더 위에 오도록 설정 */
-}
 
 /* 기본적으로 테두리 숨기기 */
 .textarea {
