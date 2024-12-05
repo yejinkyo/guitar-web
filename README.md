@@ -1,11 +1,13 @@
 
-# Guitar Website
+# 🐬Guitar Website
 
-This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users
+This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.
 
 ## Features
 
-### 🖥️ **What I used**
+### 🖥️ **Technology Stack**
+This project is built using the following technologies:<br>
+
 ![js](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 ![js](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
 ![js](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -15,19 +17,12 @@ This is my first personal project, a website dedicated to guitars.<br>It feature
 ![js](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![js](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
-![js]()
-![js]()
-![js]()
-![js]()
-![js]()
-![js]()
-
-
+![FIGMA](https://img.shields.io/badge/FIGMA-black?style=flat-square&logo=figma&logoColor=red&logoWidth=12)
 
 ### 🎸 **Interactive Design**
 - Hover over guitar strings to see them vibrate and hear their corresponding tones.
 
-### 📄 **User Pages**
+### 📄 **Pages**
 - **My Page**: Manage user profiles effortlessly.
 - **Product List**: Browse a curated list of guitars for sale.
 - **Rock Meme Page**: Enjoy a collection of rock-related memes for entertainment.
@@ -36,8 +31,6 @@ This is my first personal project, a website dedicated to guitars.<br>It feature
 - Flexible design to accommodate additional features or customizations in the future.
 
 ---
-
-## Technology Stack
 
 This project is built using the following technologies:
 
