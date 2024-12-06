@@ -6,10 +6,10 @@
     <form method="post" class="my-3">
 
         {{ form.subject.label }}
-        {{ form.subject() }}
+        {{ form.subject(class="form-control") }}
 
         {{ form.content.label }}
-        {{ form.content() }}
+        {{ form.content(class="form-control") }}
 
         <button type="submit" class="btn btn-primary">Save</button>
     </form>
