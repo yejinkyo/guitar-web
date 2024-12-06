@@ -2,6 +2,8 @@
 
 <p style="color:#ffffff" align="center">This is my first personal project, a website dedicated to guitars.<br>It features a unique design and interactive elements to engage users.<br></p>
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Ubuntu&size=18&pause=1000&color=D586FF&vCenter=true&multiline=true&random=true&width=435&lines=dokidoki" alt="Typing SVG" /></a>
+
 ## Features
 
 <img src="main.png" alt="Guitar Image" width="250" height="150"> <img src="aboutus.png" alt="Guitar Image" width="280" height="150"> 
