@@ -21,7 +21,8 @@
 ![FIGMA](https://img.shields.io/badge/FIGMA-black?style=flat-square&logo=figma&logoColor=red&logoWidth=12)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yejinkyo)](https://github.com/anuraghazra/github-readme-stats)
-![snake gif](https://github.com/yejinkyo/yejinkyo/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/yejinkyo/yejinkyo/blob/output/github-contribution-grid-snake.svg) <br>
+아니 나 잔디 많이 심었는데 왜이래 이거
 
 
 
