@@ -7,6 +7,10 @@ setTimeout(function() {
             document.getElementById('text').style.display = 'block';  // 글자를 보이게 함
         }, 1500);
 
+setTimeout(function() {
+            document.getElementById('text2').style.display = 'block';  // 글자를 보이게 함
+        }, 1500);
+
 // 오디오 파일 로드
 const string1Sound = new Audio('/static/sounds/kickback.mp3'); // 오디오 파일 경로
 

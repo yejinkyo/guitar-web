@@ -27,7 +27,7 @@ body {
 .guitar-wrapper.expanded {
     left: 50%;  /* 화면 중앙으로 이동 */
     top: 50%;
-    transform: translate(-50%, -100%) scale(3.7); /* 확대 효과 */
+    transform: translate(-50%, -113%) scale(3.7); /* 확대 효과 */
     opacity: 0.3;
 }
 .guitar-wrapper {

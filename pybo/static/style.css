@@ -1,6 +1,7 @@
 /* 기본 스타일 */
 body {
-    background-image: url("images/우주인.jpg");
+    background-image: url("images/giphy3.webp");
+
     background-size: cover;
     background-position: center;
     display: flex;
@@ -107,13 +108,18 @@ body {
 
 
 .message-box {
-            display: none;
-            font-family: 'Protest Revolution', sans-serif;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    display: none;
+            font-family: 'Abril Fatface', sans-serif;
             position: absolute;
-            top: 50px;
-            right: 200px;
-            font-size: 20px;
-            color: black;
+            text-align: center;
+            top: 35%;
+            font-size: 110px;
+            color: white;
+
+
+            border-color: black;
+            border: black;
         }
 
 .container {
